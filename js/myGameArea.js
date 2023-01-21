@@ -27,7 +27,7 @@ const myGameArea = {
         background.img.src = "./img/Background.png"
 
         // Create the Player
-        player = new Player(0, 0, 24, 28)
+        player = new Player(0, 0, 32, 46)
         myGameArea.components.push(player)
 
         let platform1 = new Component(50, myGameArea.canvas.width - 300, 100, 200, "black");
@@ -36,6 +36,7 @@ const myGameArea = {
         platforms.push(platform2)
 
         updateTimer = setInterval(myGameArea.update, 1000 / 60)
+        animateTimer = setInterval(player.animate, 1000 / 10)
     },
     restart: function () {
 
