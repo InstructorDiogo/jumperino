@@ -78,3 +78,4 @@ document.addEventListener('keyup', ({ key }) => {
 window.onload = () => {
     myGameArea.generateCanvas()
 }
+
